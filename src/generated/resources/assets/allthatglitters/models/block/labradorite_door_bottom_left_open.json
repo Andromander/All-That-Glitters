@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/door_bottom_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "allthatglitters:block/labradorite_door_bottom",
+    "side": "allthatglitters:block/labradorite_door_bottom"
+  }
+}

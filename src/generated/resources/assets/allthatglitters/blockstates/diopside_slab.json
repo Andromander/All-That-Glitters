@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/diopside_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/diopside_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/diopside_slab_top"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bottom": "allthatglitters:block/carnelian_trapdoor",
+    "side": "allthatglitters:block/carnelian_trapdoor",
+    "top": "allthatglitters:block/carnelian_trapdoor"
+  }
+}

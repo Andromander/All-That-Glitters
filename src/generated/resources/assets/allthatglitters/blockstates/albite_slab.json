@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/albite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/albite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/albite_slab_top"
+    }
+  }
+}

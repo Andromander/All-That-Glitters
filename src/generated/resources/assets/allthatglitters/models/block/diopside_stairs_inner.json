@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "gaiadimension:block/diopside_block",
+    "side": "gaiadimension:block/diopside_block",
+    "top": "gaiadimension:block/diopside_block"
+  }
+}

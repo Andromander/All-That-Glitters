@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left_open",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bottom": "allthatglitters:block/opalite_trapdoor",
+    "side": "allthatglitters:block/opalite_trapdoor",
+    "top": "allthatglitters:block/opalite_trapdoor"
+  }
+}

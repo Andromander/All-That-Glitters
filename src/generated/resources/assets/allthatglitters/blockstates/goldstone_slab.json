@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/goldstone_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/goldstone_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/goldstone_slab_top"
+    }
+  }
+}

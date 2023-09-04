@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/blue_opal_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/blue_opal_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/blue_opal_slab_top"
+    }
+  }
+}

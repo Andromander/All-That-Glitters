@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/celestine_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/celestine_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/celestine_slab_top"
+    }
+  }
+}

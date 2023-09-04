@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "bottom": "allthatglitters:block/euclase_trapdoor",
+    "side": "allthatglitters:block/euclase_trapdoor",
+    "top": "allthatglitters:block/euclase_trapdoor"
+  }
+}

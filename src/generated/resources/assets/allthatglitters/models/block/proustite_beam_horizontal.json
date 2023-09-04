@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/beam_horizontal",
+  "textures": {
+    "bottom": "gaiadimension:block/proustite_block",
+    "side": "gaiadimension:block/proustite_block",
+    "top": "gaiadimension:block/proustite_block"
+  }
+}

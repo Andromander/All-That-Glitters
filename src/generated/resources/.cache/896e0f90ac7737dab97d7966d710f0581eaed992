@@ -1,0 +1,16 @@
+// 1.20.1	2023-09-01T10:43:28.0377638	Tags for minecraft:block mod id allthatglitters
+248982b48db4c0b72c16cd4f0fbaa46285f1bac9 data/forge/tags/blocks/fences.json
+dfdfe5ea21d26818588e949035e9646bf1b3f0ae data/forge/tags/blocks/fence_gates.json
+b33e77ae01bca40c956a13cf2493c9510742072e data/minecraft/tags/blocks/beacon_base_blocks.json
+1bcbf37e339f308f630bf5b2be36a7848453ff11 data/minecraft/tags/blocks/doors.json
+248982b48db4c0b72c16cd4f0fbaa46285f1bac9 data/minecraft/tags/blocks/fences.json
+dfdfe5ea21d26818588e949035e9646bf1b3f0ae data/minecraft/tags/blocks/fence_gates.json
+c425b3fb40fab3f0b09bfa0d8d3e029feb232142 data/minecraft/tags/blocks/mineable/pickaxe.json
+c425b3fb40fab3f0b09bfa0d8d3e029feb232142 data/minecraft/tags/blocks/needs_iron_tool.json
+ea645b1bdcb482d216b34bca94e5f7a4fac81f40 data/minecraft/tags/blocks/slabs.json
+b33e77ae01bca40c956a13cf2493c9510742072e data/minecraft/tags/blocks/stairs.json
+e480f15535c56bc46e454038252aa193f6fd5452 data/minecraft/tags/blocks/trapdoors.json
+f8029e1dc402ddc20a8c97cd37f4422caf6a1e27 data/minecraft/tags/blocks/walls.json
+01e249cdc387dff64f5bf9ff9f25312bb34537d6 data/ornamental/tags/blocks/beams.json
+6ce6fd2b62c52777e3bd3aec1fa2d120c2f72e3c data/ornamental/tags/blocks/poles.json
+86def83e4112c9aa2106405be8a66be69412ee45 data/ornamental/tags/blocks/saddle_doors.json

@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/wall_side_tall",
+  "textures": {
+    "bottom": "gaiadimension:block/albite_block",
+    "side": "gaiadimension:block/albite_block",
+    "top": "gaiadimension:block/albite_block"
+  }
+}

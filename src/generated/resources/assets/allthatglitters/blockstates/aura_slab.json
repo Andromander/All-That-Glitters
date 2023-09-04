@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/aura_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/aura_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/aura_slab_top"
+    }
+  }
+}

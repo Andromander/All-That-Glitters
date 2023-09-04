@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "gaiadimension:block/labradorite_block",
+    "side": "gaiadimension:block/labradorite_block",
+    "top": "gaiadimension:block/labradorite_block"
+  }
+}

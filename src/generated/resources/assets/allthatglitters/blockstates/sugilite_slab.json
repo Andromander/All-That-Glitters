@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/sugilite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/sugilite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/sugilite_slab_top"
+    }
+  }
+}

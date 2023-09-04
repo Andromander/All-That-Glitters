@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/beam_horizontal",
+  "textures": {
+    "bottom": "gaiadimension:block/opalite_block",
+    "side": "gaiadimension:block/opalite_block",
+    "top": "gaiadimension:block/opalite_block"
+  }
+}

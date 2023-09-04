@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "allthatglitters:block/white_opal_trapdoor",
+    "side": "allthatglitters:block/white_opal_trapdoor",
+    "top": "allthatglitters:block/white_opal_trapdoor"
+  }
+}

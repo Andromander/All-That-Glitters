@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_gate_open",
+  "textures": {
+    "bottom": "gaiadimension:block/carnelian_block",
+    "side": "gaiadimension:block/carnelian_block",
+    "top": "gaiadimension:block/carnelian_block"
+  }
+}

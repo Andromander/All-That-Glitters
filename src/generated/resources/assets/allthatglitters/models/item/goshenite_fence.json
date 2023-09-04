@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_inventory",
+  "textures": {
+    "bottom": "gaiadimension:block/goshenite_block",
+    "side": "gaiadimension:block/goshenite_block",
+    "top": "gaiadimension:block/goshenite_block"
+  }
+}

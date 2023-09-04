@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_gate_open",
+  "textures": {
+    "bottom": "gaiadimension:block/celestine_block",
+    "side": "gaiadimension:block/celestine_block",
+    "top": "gaiadimension:block/celestine_block"
+  }
+}

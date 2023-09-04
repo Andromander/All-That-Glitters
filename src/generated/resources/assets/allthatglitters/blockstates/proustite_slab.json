@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/proustite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/proustite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/proustite_slab_top"
+    }
+  }
+}

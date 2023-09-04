@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/goshenite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/goshenite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/goshenite_slab_top"
+    }
+  }
+}

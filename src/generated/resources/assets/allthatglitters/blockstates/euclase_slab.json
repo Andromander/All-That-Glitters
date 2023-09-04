@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/euclase_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/euclase_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/euclase_slab_top"
+    }
+  }
+}

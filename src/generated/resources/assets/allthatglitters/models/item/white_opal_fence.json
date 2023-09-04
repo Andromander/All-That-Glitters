@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_inventory",
+  "textures": {
+    "bottom": "gaiadimension:block/white_opal_block",
+    "side": "gaiadimension:block/white_opal_block",
+    "top": "gaiadimension:block/white_opal_block"
+  }
+}

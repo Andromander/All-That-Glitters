@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/saddle_door_inventory",
+  "textures": {
+    "bottom": "allthatglitters:block/opalite_trapdoor",
+    "side": "allthatglitters:block/opalite_trapdoor",
+    "top": "allthatglitters:block/opalite_trapdoor"
+  }
+}

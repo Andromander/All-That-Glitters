@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/benitoite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/benitoite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/benitoite_slab_top"
+    }
+  }
+}

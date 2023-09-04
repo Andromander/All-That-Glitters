@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/hematite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/hematite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/hematite_slab_top"
+    }
+  }
+}

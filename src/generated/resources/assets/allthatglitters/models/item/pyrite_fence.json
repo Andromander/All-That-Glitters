@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_inventory",
+  "textures": {
+    "bottom": "gaiadimension:block/pyrite_block",
+    "side": "gaiadimension:block/pyrite_block",
+    "top": "gaiadimension:block/pyrite_block"
+  }
+}

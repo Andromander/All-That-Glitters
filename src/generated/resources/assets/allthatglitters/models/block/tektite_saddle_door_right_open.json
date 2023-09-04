@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "allthatglitters:block/tektite_trapdoor",
+    "side": "allthatglitters:block/tektite_trapdoor",
+    "top": "allthatglitters:block/tektite_trapdoor"
+  }
+}

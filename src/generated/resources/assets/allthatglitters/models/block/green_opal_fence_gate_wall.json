@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/fence_gate_wall",
+  "textures": {
+    "bottom": "gaiadimension:block/green_opal_block",
+    "side": "gaiadimension:block/green_opal_block",
+    "top": "gaiadimension:block/green_opal_block"
+  }
+}

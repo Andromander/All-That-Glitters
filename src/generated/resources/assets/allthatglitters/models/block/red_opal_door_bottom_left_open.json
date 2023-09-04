@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/door_bottom_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "allthatglitters:block/red_opal_door_bottom",
+    "side": "allthatglitters:block/red_opal_door_bottom"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/labradorite_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/labradorite_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/labradorite_slab_top"
+    }
+  }
+}

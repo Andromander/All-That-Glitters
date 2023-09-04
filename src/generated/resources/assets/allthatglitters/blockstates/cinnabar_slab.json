@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/cinnabar_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/cinnabar_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/cinnabar_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/bismuth_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/bismuth_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/bismuth_slab_top"
+    }
+  }
+}

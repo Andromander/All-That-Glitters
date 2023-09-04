@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "allthatglitters:block/moonstone_slab"
+    },
+    "type=double": {
+      "model": "gaiadimension:block/moonstone_block"
+    },
+    "type=top": {
+      "model": "allthatglitters:block/moonstone_slab_top"
+    }
+  }
+}
