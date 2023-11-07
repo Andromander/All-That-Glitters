@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:benitoite_block"
+    },
+    "/": {
+      "item": "gaiadimension:benitoite"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:benitoite_fence"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:hematite_block"
+    },
+    "/": {
+      "item": "gaiadimension:hematite"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:hematite_fence_gate"
+  },
+  "show_notification": true
+}

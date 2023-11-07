@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:celestine_block"
+    },
+    "/": {
+      "item": "gaiadimension:celestine"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:celestine_fence"
+  },
+  "show_notification": true
+}

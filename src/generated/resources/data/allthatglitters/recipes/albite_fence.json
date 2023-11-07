@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:albite_block"
+    },
+    "/": {
+      "item": "gaiadimension:albite"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:albite_fence"
+  },
+  "show_notification": true
+}

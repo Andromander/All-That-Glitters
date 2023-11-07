@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:pyrite_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:pyrite_beam"
+  }
+}

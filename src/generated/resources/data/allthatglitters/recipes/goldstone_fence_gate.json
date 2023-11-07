@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:goldstone_block"
+    },
+    "/": {
+      "item": "gaiadimension:goldstone"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:goldstone_fence_gate"
+  },
+  "show_notification": true
+}

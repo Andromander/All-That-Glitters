@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:hematite_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:hematite_beam"
+  }
+}

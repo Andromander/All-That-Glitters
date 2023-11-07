@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:labradorite_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:labradorite_beam"
+  }
+}

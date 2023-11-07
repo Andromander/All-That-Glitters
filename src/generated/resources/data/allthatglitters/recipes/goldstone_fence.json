@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:goldstone_block"
+    },
+    "/": {
+      "item": "gaiadimension:goldstone"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:goldstone_fence"
+  },
+  "show_notification": true
+}

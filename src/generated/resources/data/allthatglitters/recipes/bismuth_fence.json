@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:bismuth_block"
+    },
+    "/": {
+      "item": "gaiadimension:bismuth_crystal"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:bismuth_fence"
+  },
+  "show_notification": true
+}

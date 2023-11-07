@@ -52,6 +52,7 @@ public class AllThatGlittersMod {
         generator.addProvider(event.includeServer(), blocktags);
         generator.addProvider(event.includeServer(), new ItemTagGenerator(output, provider, helper, blocktags));
         generator.addProvider(event.includeServer(), new LootGenerator(output));
+        generator.addProvider(event.includeServer(), new RecipeGenerator(output));
         generator.addProvider(true, new PackMetadataGenerator(output).add(
                 PackMetadataSection.TYPE,
                 new PackMetadataSection(

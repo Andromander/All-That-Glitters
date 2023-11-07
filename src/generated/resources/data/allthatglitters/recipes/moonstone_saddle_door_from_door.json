@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "allthatglitters:moonstone_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "allthatglitters:moonstone_saddle_door"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "allthatglitters:red_opal_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "allthatglitters:red_opal_saddle_door"
+  }
+}

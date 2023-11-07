@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:aura_block"
+    },
+    "/": {
+      "item": "gaiadimension:aura_cluster"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:aura_fence_gate"
+  },
+  "show_notification": true
+}

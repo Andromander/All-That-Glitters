@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:cinnabar_block"
+    },
+    "/": {
+      "item": "gaiadimension:cinnabar"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:cinnabar_fence"
+  },
+  "show_notification": true
+}

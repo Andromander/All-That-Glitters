@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "allthatglitters:euclase_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "allthatglitters:euclase_saddle_door"
+  }
+}

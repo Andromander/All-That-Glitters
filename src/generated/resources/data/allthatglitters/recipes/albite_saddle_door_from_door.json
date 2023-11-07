@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "allthatglitters:albite_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "allthatglitters:albite_saddle_door"
+  }
+}

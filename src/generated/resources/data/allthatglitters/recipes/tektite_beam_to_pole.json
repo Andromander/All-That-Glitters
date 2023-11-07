@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:tektite_beam"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:tektite_pole"
+  }
+}

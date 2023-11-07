@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:blue_opal_block"
+    },
+    "/": {
+      "item": "gaiadimension:blue_opal"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "allthatglitters:blue_opal_fence"
+  },
+  "show_notification": true
+}

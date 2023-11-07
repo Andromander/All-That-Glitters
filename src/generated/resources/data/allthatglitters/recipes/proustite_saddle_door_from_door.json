@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "allthatglitters:proustite_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "allthatglitters:proustite_saddle_door"
+  }
+}

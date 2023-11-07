@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:celestine_block"
+    },
+    "/": {
+      "item": "gaiadimension:celestine"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:celestine_fence_gate"
+  },
+  "show_notification": true
+}

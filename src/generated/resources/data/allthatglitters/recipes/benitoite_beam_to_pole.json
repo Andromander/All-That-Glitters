@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:benitoite_beam"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:benitoite_pole"
+  }
+}

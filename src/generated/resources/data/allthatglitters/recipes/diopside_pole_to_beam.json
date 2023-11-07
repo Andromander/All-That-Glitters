@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:diopside_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:diopside_beam"
+  }
+}

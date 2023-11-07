@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:moonstone_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:moonstone_beam"
+  }
+}

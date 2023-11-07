@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:labradorite_block"
+    },
+    "/": {
+      "item": "gaiadimension:labradorite"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:labradorite_fence_gate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:goshenite_beam"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:goshenite_pole"
+  }
+}

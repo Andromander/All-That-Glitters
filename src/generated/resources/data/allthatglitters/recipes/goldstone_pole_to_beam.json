@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:goldstone_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:goldstone_beam"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "gaiadimension:white_opal_block"
+    },
+    "/": {
+      "item": "gaiadimension:white_opal"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "allthatglitters:white_opal_fence_gate"
+  },
+  "show_notification": true
+}

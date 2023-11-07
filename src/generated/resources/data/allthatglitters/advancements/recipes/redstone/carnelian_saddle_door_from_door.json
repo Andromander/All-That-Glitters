@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_carnelian": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "allthatglitters:carnelian_door"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:carnelian_saddle_door_from_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_carnelian",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:carnelian_saddle_door_from_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

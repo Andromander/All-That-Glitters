@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:aura_beam"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:aura_pole"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:sugilite_pole"
+    }
+  ],
+  "result": {
+    "item": "allthatglitters:sugilite_beam"
+  }
+}
