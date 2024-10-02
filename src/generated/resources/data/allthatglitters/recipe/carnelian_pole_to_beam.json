@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:carnelian_pole"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:carnelian_beam"
+  }
+}

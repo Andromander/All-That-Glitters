@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_euclase": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gaiadimension:euclase_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:euclase_stairs_stone_cutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_euclase"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:euclase_stairs_stone_cutting"
+    ]
+  }
+}

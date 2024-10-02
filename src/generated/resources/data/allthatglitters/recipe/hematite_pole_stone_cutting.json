@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:hematite_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:hematite_pole"
+  }
+}

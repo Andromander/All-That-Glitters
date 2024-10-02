@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:labradorite_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:labradorite_beam"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:moonstone_block"
+    },
+    "/": {
+      "item": "gaiadimension:moonstone"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "allthatglitters:moonstone_fence"
+  }
+}

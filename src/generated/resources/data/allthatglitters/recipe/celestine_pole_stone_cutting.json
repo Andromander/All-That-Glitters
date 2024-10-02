@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:celestine_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:celestine_pole"
+  }
+}

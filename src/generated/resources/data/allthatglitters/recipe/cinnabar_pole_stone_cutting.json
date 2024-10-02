@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:cinnabar_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:cinnabar_pole"
+  }
+}

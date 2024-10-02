@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:cinnabar_beam"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:cinnabar_pole"
+  }
+}

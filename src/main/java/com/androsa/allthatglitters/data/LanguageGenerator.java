@@ -1,14 +1,13 @@
 package com.androsa.allthatglitters.data;
 
 import com.androsa.allthatglitters.ATGBlocks;
-import com.androsa.allthatglitters.ATGBuilders;
 import com.androsa.allthatglitters.AllThatGlittersMod;
-import com.androsa.ornamental.blocks.*;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.data.LanguageProvider;
+
+import java.util.function.Supplier;
 
 public class LanguageGenerator extends LanguageProvider {
 
@@ -269,7 +268,7 @@ public class LanguageGenerator extends LanguageProvider {
         add(ATGBlocks.celestine_saddle_door, "Celestine Saddle Door");
     }
 
-    private void add(RegistryObject<? extends Block> block, String name) {
-        this.add("block.allthatglitters." + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), name);
+    private void add(Supplier<? extends Block> block, String name) {
+        this.add("block.allthatglitters." + BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), name);
     }
 }

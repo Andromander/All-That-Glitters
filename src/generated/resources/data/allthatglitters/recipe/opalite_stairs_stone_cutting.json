@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:opalite_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:opalite_stairs"
+  }
+}

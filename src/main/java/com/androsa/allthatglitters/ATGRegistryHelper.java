@@ -8,8 +8,9 @@ import com.androsa.ornamental.registry.helper.MasterRegistryHelper;
 import com.google.common.collect.Lists;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
 
 public class ATGRegistryHelper extends MasterRegistryHelper {
 
@@ -17,44 +18,48 @@ public class ATGRegistryHelper extends MasterRegistryHelper {
         super(blockreg, itemreg);
     }
 
-    public RegistryObject<OrnamentStair> stairs(OrnamentBuilder builder) {
+    public Supplier<OrnamentStair> stairs(OrnamentBuilder builder) {
         return super.stairs(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentStair::new);
     }
 
-    public RegistryObject<OrnamentSlab> slab(OrnamentBuilder builder) {
+    public Supplier<OrnamentSlab> slab(OrnamentBuilder builder) {
         return super.slab(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentSlab::new);
     }
 
-    public RegistryObject<OrnamentFence> fence(OrnamentBuilder builder) {
+    public Supplier<OrnamentFence> fence(OrnamentBuilder builder) {
         return super.fence(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentFence::new);
     }
 
-    public RegistryObject<OrnamentTrapDoor> trapdoor(OrnamentBuilder builder) {
+    public Supplier<OrnamentTrapDoor> trapdoor(OrnamentBuilder builder) {
         return super.trapdoor(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentTrapDoor::new);
     }
 
-    public RegistryObject<OrnamentFenceGate> fencegate(OrnamentBuilder builder) {
+    public Supplier<OrnamentFenceGate> fencegate(OrnamentBuilder builder) {
         return super.fencegate(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentFenceGate::new);
     }
 
-    public RegistryObject<OrnamentDoor> door(OrnamentBuilder builder) {
+    public Supplier<OrnamentDoor> door(OrnamentBuilder builder) {
         return super.door(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentDoor::new);
     }
 
-    public RegistryObject<OrnamentPole> pole(OrnamentBuilder builder) {
+    public Supplier<OrnamentPole> pole(OrnamentBuilder builder) {
         return super.pole(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentPole::new);
     }
 
-    public RegistryObject<OrnamentBeam> beam(OrnamentBuilder builder) {
+    public Supplier<OrnamentBeam> beam(OrnamentBuilder builder) {
         return super.beam(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentBeam::new);
     }
 
-    public RegistryObject<OrnamentWall> wall(OrnamentBuilder builder) {
+    public Supplier<OrnamentWall> wall(OrnamentBuilder builder) {
         return super.wall(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentWall::new);
     }
 
-    public RegistryObject<OrnamentSaddleDoor> saddledoor(OrnamentBuilder builder) {
+    public Supplier<OrnamentSaddleDoor> saddledoor(OrnamentBuilder builder) {
         return super.saddledoor(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentSaddleDoor::new);
+    }
+
+    public Supplier<OrnamentSupport> support(OrnamentBuilder builder) {
+        return super.support(builder, Lists.newArrayList(), Lists.newArrayList(), OrnamentSupport::new);
     }
 
     @Override
@@ -105,5 +110,10 @@ public class ATGRegistryHelper extends MasterRegistryHelper {
     @Override
     protected TagHelper saddledoorTags() {
         return new TagHelper(this.array(BlockTagGenerator.SADDLE_DOORS), this.array(ItemTagGenerator.SADDLE_DOORS));
+    }
+
+    @Override
+    protected TagHelper supportTags() {
+        return null;
     }
 }

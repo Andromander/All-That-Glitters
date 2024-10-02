@@ -5,317 +5,307 @@ import androsa.gaiadimension.registry.registration.ModItems;
 import com.androsa.allthatglitters.ATGBlocks;
 import com.androsa.allthatglitters.AllThatGlittersMod;
 import com.androsa.ornamental.data.provider.OrnamentalRecipeProvider;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeOutput;
 
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class RecipeGenerator extends OrnamentalRecipeProvider {
 
-    public RecipeGenerator(PackOutput output) {
-        super(output, AllThatGlittersMod.MODID);
+    public RecipeGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super(output, provider, AllThatGlittersMod.MODID);
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        stairs(consumer, ATGBlocks.sugilite_stairs, ModBlocks.sugilite_block.get());
-        stairs(consumer, ATGBlocks.hematite_stairs, ModBlocks.hematite_block.get());
-        stairs(consumer, ATGBlocks.cinnabar_stairs, ModBlocks.cinnabar_block.get());
-        stairs(consumer, ATGBlocks.labradorite_stairs, ModBlocks.labradorite_block.get());
-        stairs(consumer, ATGBlocks.moonstone_stairs, ModBlocks.moonstone_block.get());
-        stairs(consumer, ATGBlocks.red_opal_stairs, ModBlocks.red_opal_block.get());
-        stairs(consumer, ATGBlocks.blue_opal_stairs, ModBlocks.blue_opal_block.get());
-        stairs(consumer, ATGBlocks.green_opal_stairs, ModBlocks.green_opal_block.get());
-        stairs(consumer, ATGBlocks.white_opal_stairs, ModBlocks.white_opal_block.get());
-        stairs(consumer, ATGBlocks.pyrite_stairs, ModBlocks.pyrite_block.get());
-        stairs(consumer, ATGBlocks.tektite_stairs, ModBlocks.tektite_block.get());
-        stairs(consumer, ATGBlocks.goldstone_stairs, ModBlocks.goldstone_block.get());
-        stairs(consumer, ATGBlocks.aura_stairs, ModBlocks.aura_block.get());
-        stairs(consumer, ATGBlocks.bismuth_stairs, ModBlocks.bismuth_block.get());
-        stairs(consumer, ATGBlocks.opalite_stairs, ModBlocks.opalite_block.get());
-        stairs(consumer, ATGBlocks.stibnite_stairs, ModBlocks.stibnite_block.get());
-        stairs(consumer, ATGBlocks.proustite_stairs, ModBlocks.proustite_block.get());
-        stairs(consumer, ATGBlocks.euclase_stairs, ModBlocks.euclase_block.get());
-        stairs(consumer, ATGBlocks.albite_stairs, ModBlocks.albite_block.get());
-        stairs(consumer, ATGBlocks.carnelian_stairs, ModBlocks.carnelian_block.get());
-        stairs(consumer, ATGBlocks.benitoite_stairs, ModBlocks.benitoite_block.get());
-        stairs(consumer, ATGBlocks.diopside_stairs, ModBlocks.diopside_block.get());
-        stairs(consumer, ATGBlocks.goshenite_stairs, ModBlocks.goshenite_block.get());
-        stairs(consumer, ATGBlocks.celestine_stairs, ModBlocks.celestine_block.get());
-
-        slab(consumer, ATGBlocks.sugilite_slab, ModBlocks.sugilite_block.get());
-        slab(consumer, ATGBlocks.hematite_slab, ModBlocks.hematite_block.get());
-        slab(consumer, ATGBlocks.cinnabar_slab, ModBlocks.cinnabar_block.get());
-        slab(consumer, ATGBlocks.labradorite_slab, ModBlocks.labradorite_block.get());
-        slab(consumer, ATGBlocks.moonstone_slab, ModBlocks.moonstone_block.get());
-        slab(consumer, ATGBlocks.red_opal_slab, ModBlocks.red_opal_block.get());
-        slab(consumer, ATGBlocks.blue_opal_slab, ModBlocks.blue_opal_block.get());
-        slab(consumer, ATGBlocks.green_opal_slab, ModBlocks.green_opal_block.get());
-        slab(consumer, ATGBlocks.white_opal_slab, ModBlocks.white_opal_block.get());
-        slab(consumer, ATGBlocks.pyrite_slab, ModBlocks.pyrite_block.get());
-        slab(consumer, ATGBlocks.tektite_slab, ModBlocks.tektite_block.get());
-        slab(consumer, ATGBlocks.goldstone_slab, ModBlocks.goldstone_block.get());
-        slab(consumer, ATGBlocks.aura_slab, ModBlocks.aura_block.get());
-        slab(consumer, ATGBlocks.bismuth_slab, ModBlocks.bismuth_block.get());
-        slab(consumer, ATGBlocks.opalite_slab, ModBlocks.opalite_block.get());
-        slab(consumer, ATGBlocks.stibnite_slab, ModBlocks.stibnite_block.get());
-        slab(consumer, ATGBlocks.proustite_slab, ModBlocks.proustite_block.get());
-        slab(consumer, ATGBlocks.euclase_slab, ModBlocks.euclase_block.get());
-        slab(consumer, ATGBlocks.albite_slab, ModBlocks.albite_block.get());
-        slab(consumer, ATGBlocks.carnelian_slab, ModBlocks.carnelian_block.get());
-        slab(consumer, ATGBlocks.benitoite_slab, ModBlocks.benitoite_block.get());
-        slab(consumer, ATGBlocks.diopside_slab, ModBlocks.diopside_block.get());
-        slab(consumer, ATGBlocks.goshenite_slab, ModBlocks.goshenite_block.get());
-        slab(consumer, ATGBlocks.celestine_slab, ModBlocks.celestine_block.get());
-
-        fence(consumer, ATGBlocks.sugilite_fence, ModBlocks.sugilite_block.get(), ModItems.sugilite.get());
-        fence(consumer, ATGBlocks.hematite_fence, ModBlocks.hematite_block.get(), ModItems.hematite.get());
-        fence(consumer, ATGBlocks.cinnabar_fence, ModBlocks.cinnabar_block.get(), ModItems.cinnabar.get());
-        fence(consumer, ATGBlocks.labradorite_fence, ModBlocks.labradorite_block.get(), ModItems.labradorite.get());
-        fence(consumer, ATGBlocks.moonstone_fence, ModBlocks.moonstone_block.get(), ModItems.moonstone.get());
-        fence(consumer, ATGBlocks.red_opal_fence, ModBlocks.red_opal_block.get(), ModItems.red_opal.get());
-        fence(consumer, ATGBlocks.blue_opal_fence, ModBlocks.blue_opal_block.get(), ModItems.blue_opal.get());
-        fence(consumer, ATGBlocks.green_opal_fence, ModBlocks.green_opal_block.get(), ModItems.green_opal.get());
-        fence(consumer, ATGBlocks.white_opal_fence, ModBlocks.white_opal_block.get(), ModItems.white_opal.get());
-        fence(consumer, ATGBlocks.pyrite_fence, ModBlocks.pyrite_block.get(), ModItems.pyrite.get());
-        fence(consumer, ATGBlocks.tektite_fence, ModBlocks.tektite_block.get(), ModItems.tektite.get());
-        fence(consumer, ATGBlocks.goldstone_fence, ModBlocks.goldstone_block.get(), ModItems.goldstone.get());
-        fence(consumer, ATGBlocks.aura_fence, ModBlocks.aura_block.get(), ModItems.aura_cluster.get());
-        fence(consumer, ATGBlocks.bismuth_fence, ModBlocks.bismuth_block.get(), ModItems.bismuth_crystal.get());
-        fence(consumer, ATGBlocks.opalite_fence, ModBlocks.opalite_block.get(), ModItems.opalite.get());
-        fence(consumer, ATGBlocks.stibnite_fence, ModBlocks.stibnite_block.get(), ModItems.stibnite.get());
-        fence(consumer, ATGBlocks.proustite_fence, ModBlocks.proustite_block.get(), ModItems.proustite.get());
-        fence(consumer, ATGBlocks.euclase_fence, ModBlocks.euclase_block.get(), ModItems.euclase.get());
-        fence(consumer, ATGBlocks.albite_fence, ModBlocks.albite_block.get(), ModItems.albite.get());
-        fence(consumer, ATGBlocks.carnelian_fence, ModBlocks.carnelian_block.get(), ModItems.carnelian.get());
-        fence(consumer, ATGBlocks.benitoite_fence, ModBlocks.benitoite_block.get(), ModItems.benitoite.get());
-        fence(consumer, ATGBlocks.diopside_fence, ModBlocks.diopside_block.get(), ModItems.diopside.get());
-        fence(consumer, ATGBlocks.goshenite_fence, ModBlocks.goshenite_block.get(), ModItems.goshenite.get());
-        fence(consumer, ATGBlocks.celestine_fence, ModBlocks.celestine_block.get(), ModItems.celestine.get());
-
-        trapdoor(consumer, ATGBlocks.sugilite_trapdoor, ModItems.sugilite.get());
-        trapdoor(consumer, ATGBlocks.hematite_trapdoor, ModItems.hematite.get());
-        trapdoor(consumer, ATGBlocks.cinnabar_trapdoor, ModItems.cinnabar.get());
-        trapdoor(consumer, ATGBlocks.labradorite_trapdoor, ModItems.labradorite.get());
-        trapdoor(consumer, ATGBlocks.moonstone_trapdoor, ModItems.moonstone.get());
-        trapdoor(consumer, ATGBlocks.red_opal_trapdoor, ModItems.red_opal.get());
-        trapdoor(consumer, ATGBlocks.blue_opal_trapdoor, ModItems.blue_opal.get());
-        trapdoor(consumer, ATGBlocks.green_opal_trapdoor, ModItems.green_opal.get());
-        trapdoor(consumer, ATGBlocks.white_opal_trapdoor, ModItems.white_opal.get());
-        trapdoor(consumer, ATGBlocks.pyrite_trapdoor, ModItems.pyrite.get());
-        trapdoor(consumer, ATGBlocks.tektite_trapdoor, ModItems.tektite.get());
-        trapdoor(consumer, ATGBlocks.goldstone_trapdoor, ModItems.goldstone.get());
-        trapdoor(consumer, ATGBlocks.aura_trapdoor, ModItems.aura_cluster.get());
-        trapdoor(consumer, ATGBlocks.bismuth_trapdoor, ModItems.bismuth_crystal.get());
-        trapdoor(consumer, ATGBlocks.opalite_trapdoor, ModItems.opalite.get());
-        trapdoor(consumer, ATGBlocks.stibnite_trapdoor, ModItems.stibnite.get());
-        trapdoor(consumer, ATGBlocks.proustite_trapdoor, ModItems.proustite.get());
-        trapdoor(consumer, ATGBlocks.euclase_trapdoor, ModItems.euclase.get());
-        trapdoor(consumer, ATGBlocks.albite_trapdoor, ModItems.albite.get());
-        trapdoor(consumer, ATGBlocks.carnelian_trapdoor, ModItems.carnelian.get());
-        trapdoor(consumer, ATGBlocks.benitoite_trapdoor, ModItems.benitoite.get());
-        trapdoor(consumer, ATGBlocks.diopside_trapdoor, ModItems.diopside.get());
-        trapdoor(consumer, ATGBlocks.goshenite_trapdoor, ModItems.goshenite.get());
-        trapdoor(consumer, ATGBlocks.celestine_trapdoor, ModItems.celestine.get());
-
-        fencegate(consumer, ATGBlocks.sugilite_fence_gate, ModBlocks.sugilite_block.get(), ModItems.sugilite.get());
-        fencegate(consumer, ATGBlocks.hematite_fence_gate, ModBlocks.hematite_block.get(), ModItems.hematite.get());
-        fencegate(consumer, ATGBlocks.cinnabar_fence_gate, ModBlocks.cinnabar_block.get(), ModItems.cinnabar.get());
-        fencegate(consumer, ATGBlocks.labradorite_fence_gate, ModBlocks.labradorite_block.get(), ModItems.labradorite.get());
-        fencegate(consumer, ATGBlocks.moonstone_fence_gate, ModBlocks.moonstone_block.get(), ModItems.moonstone.get());
-        fencegate(consumer, ATGBlocks.red_opal_fence_gate, ModBlocks.red_opal_block.get(), ModItems.red_opal.get());
-        fencegate(consumer, ATGBlocks.blue_opal_fence_gate, ModBlocks.blue_opal_block.get(), ModItems.blue_opal.get());
-        fencegate(consumer, ATGBlocks.green_opal_fence_gate, ModBlocks.green_opal_block.get(), ModItems.green_opal.get());
-        fencegate(consumer, ATGBlocks.white_opal_fence_gate, ModBlocks.white_opal_block.get(), ModItems.white_opal.get());
-        fencegate(consumer, ATGBlocks.pyrite_fence_gate, ModBlocks.pyrite_block.get(), ModItems.pyrite.get());
-        fencegate(consumer, ATGBlocks.tektite_fence_gate, ModBlocks.tektite_block.get(), ModItems.tektite.get());
-        fencegate(consumer, ATGBlocks.goldstone_fence_gate, ModBlocks.goldstone_block.get(), ModItems.goldstone.get());
-        fencegate(consumer, ATGBlocks.aura_fence_gate, ModBlocks.aura_block.get(), ModItems.aura_cluster.get());
-        fencegate(consumer, ATGBlocks.bismuth_fence_gate, ModBlocks.bismuth_block.get(), ModItems.bismuth_crystal.get());
-        fencegate(consumer, ATGBlocks.opalite_fence_gate, ModBlocks.opalite_block.get(), ModItems.opalite.get());
-        fencegate(consumer, ATGBlocks.stibnite_fence_gate, ModBlocks.stibnite_block.get(), ModItems.stibnite.get());
-        fencegate(consumer, ATGBlocks.proustite_fence_gate, ModBlocks.proustite_block.get(), ModItems.proustite.get());
-        fencegate(consumer, ATGBlocks.euclase_fence_gate, ModBlocks.euclase_block.get(), ModItems.euclase.get());
-        fencegate(consumer, ATGBlocks.albite_fence_gate, ModBlocks.albite_block.get(), ModItems.albite.get());
-        fencegate(consumer, ATGBlocks.carnelian_fence_gate, ModBlocks.carnelian_block.get(), ModItems.carnelian.get());
-        fencegate(consumer, ATGBlocks.benitoite_fence_gate, ModBlocks.benitoite_block.get(), ModItems.benitoite.get());
-        fencegate(consumer, ATGBlocks.diopside_fence_gate, ModBlocks.diopside_block.get(), ModItems.diopside.get());
-        fencegate(consumer, ATGBlocks.goshenite_fence_gate, ModBlocks.goshenite_block.get(), ModItems.goshenite.get());
-        fencegate(consumer, ATGBlocks.celestine_fence_gate, ModBlocks.celestine_block.get(), ModItems.celestine.get());
-
-        door(consumer, ATGBlocks.sugilite_door, ModItems.sugilite.get());
-        door(consumer, ATGBlocks.hematite_door, ModItems.hematite.get());
-        door(consumer, ATGBlocks.cinnabar_door, ModItems.cinnabar.get());
-        door(consumer, ATGBlocks.labradorite_door, ModItems.labradorite.get());
-        door(consumer, ATGBlocks.moonstone_door, ModItems.moonstone.get());
-        door(consumer, ATGBlocks.red_opal_door, ModItems.red_opal.get());
-        door(consumer, ATGBlocks.blue_opal_door, ModItems.blue_opal.get());
-        door(consumer, ATGBlocks.green_opal_door, ModItems.green_opal.get());
-        door(consumer, ATGBlocks.white_opal_door, ModItems.white_opal.get());
-        door(consumer, ATGBlocks.pyrite_door, ModItems.pyrite.get());
-        door(consumer, ATGBlocks.tektite_door, ModItems.tektite.get());
-        door(consumer, ATGBlocks.goldstone_door, ModItems.goldstone.get());
-        door(consumer, ATGBlocks.aura_door, ModItems.aura_cluster.get());
-        door(consumer, ATGBlocks.bismuth_door, ModItems.bismuth_crystal.get());
-        door(consumer, ATGBlocks.opalite_door, ModItems.opalite.get());
-        door(consumer, ATGBlocks.stibnite_door, ModItems.stibnite.get());
-        door(consumer, ATGBlocks.proustite_door, ModItems.proustite.get());
-        door(consumer, ATGBlocks.euclase_door, ModItems.euclase.get());
-        door(consumer, ATGBlocks.albite_door, ModItems.albite.get());
-        door(consumer, ATGBlocks.carnelian_door, ModItems.carnelian.get());
-        door(consumer, ATGBlocks.benitoite_door, ModItems.benitoite.get());
-        door(consumer, ATGBlocks.diopside_door, ModItems.diopside.get());
-        door(consumer, ATGBlocks.goshenite_door, ModItems.goshenite.get());
-        door(consumer, ATGBlocks.celestine_door, ModItems.celestine.get());
-
-        pole(consumer, ATGBlocks.sugilite_pole, ModBlocks.sugilite_block.get());
-        pole(consumer, ATGBlocks.hematite_pole, ModBlocks.hematite_block.get());
-        pole(consumer, ATGBlocks.cinnabar_pole, ModBlocks.cinnabar_block.get());
-        pole(consumer, ATGBlocks.labradorite_pole, ModBlocks.labradorite_block.get());
-        pole(consumer, ATGBlocks.moonstone_pole, ModBlocks.moonstone_block.get());
-        pole(consumer, ATGBlocks.red_opal_pole, ModBlocks.red_opal_block.get());
-        pole(consumer, ATGBlocks.blue_opal_pole, ModBlocks.blue_opal_block.get());
-        pole(consumer, ATGBlocks.green_opal_pole, ModBlocks.green_opal_block.get());
-        pole(consumer, ATGBlocks.white_opal_pole, ModBlocks.white_opal_block.get());
-        pole(consumer, ATGBlocks.pyrite_pole, ModBlocks.pyrite_block.get());
-        pole(consumer, ATGBlocks.tektite_pole, ModBlocks.tektite_block.get());
-        pole(consumer, ATGBlocks.goldstone_pole, ModBlocks.goldstone_block.get());
-        pole(consumer, ATGBlocks.aura_pole, ModBlocks.aura_block.get());
-        pole(consumer, ATGBlocks.bismuth_pole, ModBlocks.bismuth_block.get());
-        pole(consumer, ATGBlocks.opalite_pole, ModBlocks.opalite_block.get());
-        pole(consumer, ATGBlocks.stibnite_pole, ModBlocks.stibnite_block.get());
-        pole(consumer, ATGBlocks.proustite_pole, ModBlocks.proustite_block.get());
-        pole(consumer, ATGBlocks.euclase_pole, ModBlocks.euclase_block.get());
-        pole(consumer, ATGBlocks.albite_pole, ModBlocks.albite_block.get());
-        pole(consumer, ATGBlocks.carnelian_pole, ModBlocks.carnelian_block.get());
-        pole(consumer, ATGBlocks.benitoite_pole, ModBlocks.benitoite_block.get());
-        pole(consumer, ATGBlocks.diopside_pole, ModBlocks.diopside_block.get());
-        pole(consumer, ATGBlocks.goshenite_pole, ModBlocks.goshenite_block.get());
-        pole(consumer, ATGBlocks.celestine_pole, ModBlocks.celestine_block.get());
-
-        beam(consumer, ATGBlocks.sugilite_beam, ModBlocks.sugilite_block.get());
-        beam(consumer, ATGBlocks.hematite_beam, ModBlocks.hematite_block.get());
-        beam(consumer, ATGBlocks.cinnabar_beam, ModBlocks.cinnabar_block.get());
-        beam(consumer, ATGBlocks.labradorite_beam, ModBlocks.labradorite_block.get());
-        beam(consumer, ATGBlocks.moonstone_beam, ModBlocks.moonstone_block.get());
-        beam(consumer, ATGBlocks.red_opal_beam, ModBlocks.red_opal_block.get());
-        beam(consumer, ATGBlocks.blue_opal_beam, ModBlocks.blue_opal_block.get());
-        beam(consumer, ATGBlocks.green_opal_beam, ModBlocks.green_opal_block.get());
-        beam(consumer, ATGBlocks.white_opal_beam, ModBlocks.white_opal_block.get());
-        beam(consumer, ATGBlocks.pyrite_beam, ModBlocks.pyrite_block.get());
-        beam(consumer, ATGBlocks.tektite_beam, ModBlocks.tektite_block.get());
-        beam(consumer, ATGBlocks.goldstone_beam, ModBlocks.goldstone_block.get());
-        beam(consumer, ATGBlocks.aura_beam, ModBlocks.aura_block.get());
-        beam(consumer, ATGBlocks.bismuth_beam, ModBlocks.bismuth_block.get());
-        beam(consumer, ATGBlocks.opalite_beam, ModBlocks.opalite_block.get());
-        beam(consumer, ATGBlocks.stibnite_beam, ModBlocks.stibnite_block.get());
-        beam(consumer, ATGBlocks.proustite_beam, ModBlocks.proustite_block.get());
-        beam(consumer, ATGBlocks.euclase_beam, ModBlocks.euclase_block.get());
-        beam(consumer, ATGBlocks.albite_beam, ModBlocks.albite_block.get());
-        beam(consumer, ATGBlocks.carnelian_beam, ModBlocks.carnelian_block.get());
-        beam(consumer, ATGBlocks.benitoite_beam, ModBlocks.benitoite_block.get());
-        beam(consumer, ATGBlocks.diopside_beam, ModBlocks.diopside_block.get());
-        beam(consumer, ATGBlocks.goshenite_beam, ModBlocks.goshenite_block.get());
-        beam(consumer, ATGBlocks.celestine_beam, ModBlocks.celestine_block.get());
-
-        convertPoleBeam(consumer, ATGBlocks.sugilite_pole, ATGBlocks.sugilite_beam);
-        convertPoleBeam(consumer, ATGBlocks.hematite_pole, ATGBlocks.hematite_beam);
-        convertPoleBeam(consumer, ATGBlocks.cinnabar_pole, ATGBlocks.cinnabar_beam);
-        convertPoleBeam(consumer, ATGBlocks.labradorite_pole, ATGBlocks.labradorite_beam);
-        convertPoleBeam(consumer, ATGBlocks.moonstone_pole, ATGBlocks.moonstone_beam);
-        convertPoleBeam(consumer, ATGBlocks.red_opal_pole, ATGBlocks.red_opal_beam);
-        convertPoleBeam(consumer, ATGBlocks.blue_opal_pole, ATGBlocks.blue_opal_beam);
-        convertPoleBeam(consumer, ATGBlocks.green_opal_pole, ATGBlocks.green_opal_beam);
-        convertPoleBeam(consumer, ATGBlocks.white_opal_pole, ATGBlocks.white_opal_beam);
-        convertPoleBeam(consumer, ATGBlocks.pyrite_pole, ATGBlocks.pyrite_beam);
-        convertPoleBeam(consumer, ATGBlocks.tektite_pole, ATGBlocks.tektite_beam);
-        convertPoleBeam(consumer, ATGBlocks.goldstone_pole, ATGBlocks.goldstone_beam);
-        convertPoleBeam(consumer, ATGBlocks.aura_pole, ATGBlocks.aura_beam);
-        convertPoleBeam(consumer, ATGBlocks.bismuth_pole, ATGBlocks.bismuth_beam);
-        convertPoleBeam(consumer, ATGBlocks.opalite_pole, ATGBlocks.opalite_beam);
-        convertPoleBeam(consumer, ATGBlocks.stibnite_pole, ATGBlocks.stibnite_beam);
-        convertPoleBeam(consumer, ATGBlocks.proustite_pole, ATGBlocks.proustite_beam);
-        convertPoleBeam(consumer, ATGBlocks.euclase_pole, ATGBlocks.euclase_beam);
-        convertPoleBeam(consumer, ATGBlocks.albite_pole, ATGBlocks.albite_beam);
-        convertPoleBeam(consumer, ATGBlocks.carnelian_pole, ATGBlocks.carnelian_beam);
-        convertPoleBeam(consumer, ATGBlocks.benitoite_pole, ATGBlocks.benitoite_beam);
-        convertPoleBeam(consumer, ATGBlocks.diopside_pole, ATGBlocks.diopside_beam);
-        convertPoleBeam(consumer, ATGBlocks.goshenite_pole, ATGBlocks.goshenite_beam);
-        convertPoleBeam(consumer, ATGBlocks.celestine_pole, ATGBlocks.celestine_beam);
-
-        wall(consumer, ATGBlocks.sugilite_wall, ModBlocks.sugilite_block.get());
-        wall(consumer, ATGBlocks.hematite_wall, ModBlocks.hematite_block.get());
-        wall(consumer, ATGBlocks.cinnabar_wall, ModBlocks.cinnabar_block.get());
-        wall(consumer, ATGBlocks.labradorite_wall, ModBlocks.labradorite_block.get());
-        wall(consumer, ATGBlocks.moonstone_wall, ModBlocks.moonstone_block.get());
-        wall(consumer, ATGBlocks.red_opal_wall, ModBlocks.red_opal_block.get());
-        wall(consumer, ATGBlocks.blue_opal_wall, ModBlocks.blue_opal_block.get());
-        wall(consumer, ATGBlocks.green_opal_wall, ModBlocks.green_opal_block.get());
-        wall(consumer, ATGBlocks.white_opal_wall, ModBlocks.white_opal_block.get());
-        wall(consumer, ATGBlocks.pyrite_wall, ModBlocks.pyrite_block.get());
-        wall(consumer, ATGBlocks.tektite_wall, ModBlocks.tektite_block.get());
-        wall(consumer, ATGBlocks.goldstone_wall, ModBlocks.goldstone_block.get());
-        wall(consumer, ATGBlocks.aura_wall, ModBlocks.aura_block.get());
-        wall(consumer, ATGBlocks.bismuth_wall, ModBlocks.bismuth_block.get());
-        wall(consumer, ATGBlocks.opalite_wall, ModBlocks.opalite_block.get());
-        wall(consumer, ATGBlocks.stibnite_wall, ModBlocks.stibnite_block.get());
-        wall(consumer, ATGBlocks.proustite_wall, ModBlocks.proustite_block.get());
-        wall(consumer, ATGBlocks.euclase_wall, ModBlocks.euclase_block.get());
-        wall(consumer, ATGBlocks.albite_wall, ModBlocks.albite_block.get());
-        wall(consumer, ATGBlocks.carnelian_wall, ModBlocks.carnelian_block.get());
-        wall(consumer, ATGBlocks.benitoite_wall, ModBlocks.benitoite_block.get());
-        wall(consumer, ATGBlocks.diopside_wall, ModBlocks.diopside_block.get());
-        wall(consumer, ATGBlocks.goshenite_wall, ModBlocks.goshenite_block.get());
-        wall(consumer, ATGBlocks.celestine_wall, ModBlocks.celestine_block.get());
-
-        saddleDoor(consumer, ATGBlocks.sugilite_saddle_door, ATGBlocks.sugilite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.hematite_saddle_door, ATGBlocks.hematite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.cinnabar_saddle_door, ATGBlocks.cinnabar_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.labradorite_saddle_door, ATGBlocks.labradorite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.moonstone_saddle_door, ATGBlocks.moonstone_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.red_opal_saddle_door, ATGBlocks.red_opal_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.blue_opal_saddle_door, ATGBlocks.blue_opal_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.green_opal_saddle_door, ATGBlocks.green_opal_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.white_opal_saddle_door, ATGBlocks.white_opal_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.pyrite_saddle_door, ATGBlocks.pyrite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.tektite_saddle_door, ATGBlocks.tektite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.goldstone_saddle_door, ATGBlocks.goldstone_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.aura_saddle_door, ATGBlocks.aura_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.bismuth_saddle_door, ATGBlocks.bismuth_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.opalite_saddle_door, ATGBlocks.opalite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.stibnite_saddle_door, ATGBlocks.stibnite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.proustite_saddle_door, ATGBlocks.proustite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.euclase_saddle_door, ATGBlocks.euclase_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.albite_saddle_door, ATGBlocks.albite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.carnelian_saddle_door, ATGBlocks.carnelian_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.benitoite_saddle_door, ATGBlocks.benitoite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.diopside_saddle_door, ATGBlocks.diopside_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.goshenite_saddle_door, ATGBlocks.goshenite_trapdoor.get());
-        saddleDoor(consumer, ATGBlocks.celestine_saddle_door, ATGBlocks.celestine_trapdoor.get());
-
-        saddleDoorFromDoor(consumer, ATGBlocks.sugilite_saddle_door, ATGBlocks.sugilite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.hematite_saddle_door, ATGBlocks.hematite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.cinnabar_saddle_door, ATGBlocks.cinnabar_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.labradorite_saddle_door, ATGBlocks.labradorite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.moonstone_saddle_door, ATGBlocks.moonstone_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.red_opal_saddle_door, ATGBlocks.red_opal_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.blue_opal_saddle_door, ATGBlocks.blue_opal_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.green_opal_saddle_door, ATGBlocks.green_opal_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.white_opal_saddle_door, ATGBlocks.white_opal_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.pyrite_saddle_door, ATGBlocks.pyrite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.tektite_saddle_door, ATGBlocks.tektite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.goldstone_saddle_door, ATGBlocks.goldstone_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.aura_saddle_door, ATGBlocks.aura_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.bismuth_saddle_door, ATGBlocks.bismuth_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.opalite_saddle_door, ATGBlocks.opalite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.stibnite_saddle_door, ATGBlocks.stibnite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.proustite_saddle_door, ATGBlocks.proustite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.euclase_saddle_door, ATGBlocks.euclase_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.albite_saddle_door, ATGBlocks.albite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.carnelian_saddle_door, ATGBlocks.carnelian_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.benitoite_saddle_door, ATGBlocks.benitoite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.diopside_saddle_door, ATGBlocks.diopside_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.goshenite_saddle_door, ATGBlocks.goshenite_door.get());
-        saddleDoorFromDoor(consumer, ATGBlocks.celestine_saddle_door, ATGBlocks.celestine_door.get());
+    protected void buildRecipes(RecipeOutput consumer) {
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.sugilite_block.get(), ModItems.sugilite.get(), true)
+                .stairs(add(ATGBlocks.sugilite_stairs, false))
+                .slab(add(ATGBlocks.sugilite_slab, false))
+                .fence(add(ATGBlocks.sugilite_fence, false))
+                .trapdoor(add(ATGBlocks.sugilite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.sugilite_fence_gate, false))
+                .door(add(ATGBlocks.sugilite_door, false))
+                .pole(add(ATGBlocks.sugilite_pole, false))
+                .beam(add(ATGBlocks.sugilite_beam, false))
+                .wall(add(ATGBlocks.sugilite_wall, false))
+                .saddledoor(add(ATGBlocks.sugilite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.hematite_block.get(), ModItems.hematite.get(), true)
+                .stairs(add(ATGBlocks.hematite_stairs, false))
+                .slab(add(ATGBlocks.hematite_slab, false))
+                .fence(add(ATGBlocks.hematite_fence, false))
+                .trapdoor(add(ATGBlocks.hematite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.hematite_fence_gate, false))
+                .door(add(ATGBlocks.hematite_door, false))
+                .pole(add(ATGBlocks.hematite_pole, false))
+                .beam(add(ATGBlocks.hematite_beam, false))
+                .wall(add(ATGBlocks.hematite_wall, false))
+                .saddledoor(add(ATGBlocks.hematite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.cinnabar_block.get(), ModItems.cinnabar.get(), true)
+                .stairs(add(ATGBlocks.cinnabar_stairs, false))
+                .slab(add(ATGBlocks.cinnabar_slab, false))
+                .fence(add(ATGBlocks.cinnabar_fence, false))
+                .trapdoor(add(ATGBlocks.cinnabar_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.cinnabar_fence_gate, false))
+                .door(add(ATGBlocks.cinnabar_door, false))
+                .pole(add(ATGBlocks.cinnabar_pole, false))
+                .beam(add(ATGBlocks.cinnabar_beam, false))
+                .wall(add(ATGBlocks.cinnabar_wall, false))
+                .saddledoor(add(ATGBlocks.cinnabar_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.labradorite_block.get(), ModItems.labradorite.get(), true)
+                .stairs(add(ATGBlocks.labradorite_stairs, false))
+                .slab(add(ATGBlocks.labradorite_slab, false))
+                .fence(add(ATGBlocks.labradorite_fence, false))
+                .trapdoor(add(ATGBlocks.labradorite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.labradorite_fence_gate, false))
+                .door(add(ATGBlocks.labradorite_door, false))
+                .pole(add(ATGBlocks.labradorite_pole, false))
+                .beam(add(ATGBlocks.labradorite_beam, false))
+                .wall(add(ATGBlocks.labradorite_wall, false))
+                .saddledoor(add(ATGBlocks.labradorite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.moonstone_block.get(), ModItems.moonstone.get(), true)
+                .stairs(add(ATGBlocks.moonstone_stairs, false))
+                .slab(add(ATGBlocks.moonstone_slab, false))
+                .fence(add(ATGBlocks.moonstone_fence, false))
+                .trapdoor(add(ATGBlocks.moonstone_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.moonstone_fence_gate, false))
+                .door(add(ATGBlocks.moonstone_door, false))
+                .pole(add(ATGBlocks.moonstone_pole, false))
+                .beam(add(ATGBlocks.moonstone_beam, false))
+                .wall(add(ATGBlocks.moonstone_wall, false))
+                .saddledoor(add(ATGBlocks.moonstone_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.red_opal_block.get(), ModItems.red_opal.get(), true)
+                .stairs(add(ATGBlocks.red_opal_stairs, false))
+                .slab(add(ATGBlocks.red_opal_slab, false))
+                .fence(add(ATGBlocks.red_opal_fence, false))
+                .trapdoor(add(ATGBlocks.red_opal_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.red_opal_fence_gate, false))
+                .door(add(ATGBlocks.red_opal_door, false))
+                .pole(add(ATGBlocks.red_opal_pole, false))
+                .beam(add(ATGBlocks.red_opal_beam, false))
+                .wall(add(ATGBlocks.red_opal_wall, false))
+                .saddledoor(add(ATGBlocks.red_opal_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.blue_opal_block.get(), ModItems.blue_opal.get(), true)
+                .stairs(add(ATGBlocks.blue_opal_stairs, false))
+                .slab(add(ATGBlocks.blue_opal_slab, false))
+                .fence(add(ATGBlocks.blue_opal_fence, false))
+                .trapdoor(add(ATGBlocks.blue_opal_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.blue_opal_fence_gate, false))
+                .door(add(ATGBlocks.blue_opal_door, false))
+                .pole(add(ATGBlocks.blue_opal_pole, false))
+                .beam(add(ATGBlocks.blue_opal_beam, false))
+                .wall(add(ATGBlocks.blue_opal_wall, false))
+                .saddledoor(add(ATGBlocks.blue_opal_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.green_opal_block.get(), ModItems.green_opal.get(), true)
+                .stairs(add(ATGBlocks.green_opal_stairs, false))
+                .slab(add(ATGBlocks.green_opal_slab, false))
+                .fence(add(ATGBlocks.green_opal_fence, false))
+                .trapdoor(add(ATGBlocks.green_opal_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.green_opal_fence_gate, false))
+                .door(add(ATGBlocks.green_opal_door, false))
+                .pole(add(ATGBlocks.green_opal_pole, false))
+                .beam(add(ATGBlocks.green_opal_beam, false))
+                .wall(add(ATGBlocks.green_opal_wall, false))
+                .saddledoor(add(ATGBlocks.green_opal_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.white_opal_block.get(), ModItems.white_opal.get(), true)
+                .stairs(add(ATGBlocks.white_opal_stairs, false))
+                .slab(add(ATGBlocks.white_opal_slab, false))
+                .fence(add(ATGBlocks.white_opal_fence, false))
+                .trapdoor(add(ATGBlocks.white_opal_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.white_opal_fence_gate, false))
+                .door(add(ATGBlocks.white_opal_door, false))
+                .pole(add(ATGBlocks.white_opal_pole, false))
+                .beam(add(ATGBlocks.white_opal_beam, false))
+                .wall(add(ATGBlocks.white_opal_wall, false))
+                .saddledoor(add(ATGBlocks.white_opal_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.pyrite_block.get(), ModItems.pyrite.get(), true)
+                .stairs(add(ATGBlocks.pyrite_stairs, false))
+                .slab(add(ATGBlocks.pyrite_slab, false))
+                .fence(add(ATGBlocks.pyrite_fence, false))
+                .trapdoor(add(ATGBlocks.pyrite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.pyrite_fence_gate, false))
+                .door(add(ATGBlocks.pyrite_door, false))
+                .pole(add(ATGBlocks.pyrite_pole, false))
+                .beam(add(ATGBlocks.pyrite_beam, false))
+                .wall(add(ATGBlocks.pyrite_wall, false))
+                .saddledoor(add(ATGBlocks.pyrite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.tektite_block.get(), ModItems.tektite.get(), true)
+                .stairs(add(ATGBlocks.tektite_stairs, false))
+                .slab(add(ATGBlocks.tektite_slab, false))
+                .fence(add(ATGBlocks.tektite_fence, false))
+                .trapdoor(add(ATGBlocks.tektite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.tektite_fence_gate, false))
+                .door(add(ATGBlocks.tektite_door, false))
+                .pole(add(ATGBlocks.tektite_pole, false))
+                .beam(add(ATGBlocks.tektite_beam, false))
+                .wall(add(ATGBlocks.tektite_wall, false))
+                .saddledoor(add(ATGBlocks.tektite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.goldstone_block.get(), ModItems.goldstone.get(), true)
+                .stairs(add(ATGBlocks.goldstone_stairs, false))
+                .slab(add(ATGBlocks.goldstone_slab, false))
+                .fence(add(ATGBlocks.goldstone_fence, false))
+                .trapdoor(add(ATGBlocks.goldstone_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.goldstone_fence_gate, false))
+                .door(add(ATGBlocks.goldstone_door, false))
+                .pole(add(ATGBlocks.goldstone_pole, false))
+                .beam(add(ATGBlocks.goldstone_beam, false))
+                .wall(add(ATGBlocks.goldstone_wall, false))
+                .saddledoor(add(ATGBlocks.goldstone_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.aura_block.get(), ModItems.aura_cluster.get(), true)
+                .stairs(add(ATGBlocks.aura_stairs, false))
+                .slab(add(ATGBlocks.aura_slab, false))
+                .fence(add(ATGBlocks.aura_fence, false))
+                .trapdoor(add(ATGBlocks.aura_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.aura_fence_gate, false))
+                .door(add(ATGBlocks.aura_door, false))
+                .pole(add(ATGBlocks.aura_pole, false))
+                .beam(add(ATGBlocks.aura_beam, false))
+                .wall(add(ATGBlocks.aura_wall, false))
+                .saddledoor(add(ATGBlocks.aura_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.bismuth_block.get(), ModItems.bismuth_crystal.get(), true)
+                .stairs(add(ATGBlocks.bismuth_stairs, false))
+                .slab(add(ATGBlocks.bismuth_slab, false))
+                .fence(add(ATGBlocks.bismuth_fence, false))
+                .trapdoor(add(ATGBlocks.bismuth_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.bismuth_fence_gate, false))
+                .door(add(ATGBlocks.bismuth_door, false))
+                .pole(add(ATGBlocks.bismuth_pole, false))
+                .beam(add(ATGBlocks.bismuth_beam, false))
+                .wall(add(ATGBlocks.bismuth_wall, false))
+                .saddledoor(add(ATGBlocks.bismuth_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.opalite_block.get(), ModItems.opalite.get(), true)
+                .stairs(add(ATGBlocks.opalite_stairs, false))
+                .slab(add(ATGBlocks.opalite_slab, false))
+                .fence(add(ATGBlocks.opalite_fence, false))
+                .trapdoor(add(ATGBlocks.opalite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.opalite_fence_gate, false))
+                .door(add(ATGBlocks.opalite_door, false))
+                .pole(add(ATGBlocks.opalite_pole, false))
+                .beam(add(ATGBlocks.opalite_beam, false))
+                .wall(add(ATGBlocks.opalite_wall, false))
+                .saddledoor(add(ATGBlocks.opalite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.stibnite_block.get(), ModItems.stibnite.get(), true)
+                .stairs(add(ATGBlocks.stibnite_stairs, false))
+                .slab(add(ATGBlocks.stibnite_slab, false))
+                .fence(add(ATGBlocks.stibnite_fence, false))
+                .trapdoor(add(ATGBlocks.stibnite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.stibnite_fence_gate, false))
+                .door(add(ATGBlocks.stibnite_door, false))
+                .pole(add(ATGBlocks.stibnite_pole, false))
+                .beam(add(ATGBlocks.stibnite_beam, false))
+                .wall(add(ATGBlocks.stibnite_wall, false))
+                .saddledoor(add(ATGBlocks.stibnite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.proustite_block.get(), ModItems.proustite.get(), true)
+                .stairs(add(ATGBlocks.proustite_stairs, false))
+                .slab(add(ATGBlocks.proustite_slab, false))
+                .fence(add(ATGBlocks.proustite_fence, false))
+                .trapdoor(add(ATGBlocks.proustite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.proustite_fence_gate, false))
+                .door(add(ATGBlocks.proustite_door, false))
+                .pole(add(ATGBlocks.proustite_pole, false))
+                .beam(add(ATGBlocks.proustite_beam, false))
+                .wall(add(ATGBlocks.proustite_wall, false))
+                .saddledoor(add(ATGBlocks.proustite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.euclase_block.get(), ModItems.euclase.get(), true)
+                .stairs(add(ATGBlocks.euclase_stairs, false))
+                .slab(add(ATGBlocks.euclase_slab, false))
+                .fence(add(ATGBlocks.euclase_fence, false))
+                .trapdoor(add(ATGBlocks.euclase_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.euclase_fence_gate, false))
+                .door(add(ATGBlocks.euclase_door, false))
+                .pole(add(ATGBlocks.euclase_pole, false))
+                .beam(add(ATGBlocks.euclase_beam, false))
+                .wall(add(ATGBlocks.euclase_wall, false))
+                .saddledoor(add(ATGBlocks.euclase_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.albite_block.get(), ModItems.albite.get(), true)
+                .stairs(add(ATGBlocks.albite_stairs, false))
+                .slab(add(ATGBlocks.albite_slab, false))
+                .fence(add(ATGBlocks.albite_fence, false))
+                .trapdoor(add(ATGBlocks.albite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.albite_fence_gate, false))
+                .door(add(ATGBlocks.albite_door, false))
+                .pole(add(ATGBlocks.albite_pole, false))
+                .beam(add(ATGBlocks.albite_beam, false))
+                .wall(add(ATGBlocks.albite_wall, false))
+                .saddledoor(add(ATGBlocks.albite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.carnelian_block.get(), ModItems.carnelian.get(), true)
+                .stairs(add(ATGBlocks.carnelian_stairs, false))
+                .slab(add(ATGBlocks.carnelian_slab, false))
+                .fence(add(ATGBlocks.carnelian_fence, false))
+                .trapdoor(add(ATGBlocks.carnelian_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.carnelian_fence_gate, false))
+                .door(add(ATGBlocks.carnelian_door, false))
+                .pole(add(ATGBlocks.carnelian_pole, false))
+                .beam(add(ATGBlocks.carnelian_beam, false))
+                .wall(add(ATGBlocks.carnelian_wall, false))
+                .saddledoor(add(ATGBlocks.carnelian_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.benitoite_block.get(), ModItems.benitoite.get(), true)
+                .stairs(add(ATGBlocks.benitoite_stairs, false))
+                .slab(add(ATGBlocks.benitoite_slab, false))
+                .fence(add(ATGBlocks.benitoite_fence, false))
+                .trapdoor(add(ATGBlocks.benitoite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.benitoite_fence_gate, false))
+                .door(add(ATGBlocks.benitoite_door, false))
+                .pole(add(ATGBlocks.benitoite_pole, false))
+                .beam(add(ATGBlocks.benitoite_beam, false))
+                .wall(add(ATGBlocks.benitoite_wall, false))
+                .saddledoor(add(ATGBlocks.benitoite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.diopside_block.get(), ModItems.diopside.get(), true)
+                .stairs(add(ATGBlocks.diopside_stairs, false))
+                .slab(add(ATGBlocks.diopside_slab, false))
+                .fence(add(ATGBlocks.diopside_fence, false))
+                .trapdoor(add(ATGBlocks.diopside_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.diopside_fence_gate, false))
+                .door(add(ATGBlocks.diopside_door, false))
+                .pole(add(ATGBlocks.diopside_pole, false))
+                .beam(add(ATGBlocks.diopside_beam, false))
+                .wall(add(ATGBlocks.diopside_wall, false))
+                .saddledoor(add(ATGBlocks.diopside_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.goshenite_block.get(), ModItems.goshenite.get(), true)
+                .stairs(add(ATGBlocks.goshenite_stairs, false))
+                .slab(add(ATGBlocks.goshenite_slab, false))
+                .fence(add(ATGBlocks.goshenite_fence, false))
+                .trapdoor(add(ATGBlocks.goshenite_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.goshenite_fence_gate, false))
+                .door(add(ATGBlocks.goshenite_door, false))
+                .pole(add(ATGBlocks.goshenite_pole, false))
+                .beam(add(ATGBlocks.goshenite_beam, false))
+                .wall(add(ATGBlocks.goshenite_wall, false))
+                .saddledoor(add(ATGBlocks.goshenite_saddle_door, false))
+                .build());
+        autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.celestine_block.get(), ModItems.celestine.get(), true)
+                .stairs(add(ATGBlocks.celestine_stairs, false))
+                .slab(add(ATGBlocks.celestine_slab, false))
+                .fence(add(ATGBlocks.celestine_fence, false))
+                .trapdoor(add(ATGBlocks.celestine_trapdoor, false), false)
+                .fencegate(add(ATGBlocks.celestine_fence_gate, false))
+                .door(add(ATGBlocks.celestine_door, false))
+                .pole(add(ATGBlocks.celestine_pole, false))
+                .beam(add(ATGBlocks.celestine_beam, false))
+                .wall(add(ATGBlocks.celestine_wall, false))
+                .saddledoor(add(ATGBlocks.celestine_saddle_door, false))
+                .build());
     }
 }

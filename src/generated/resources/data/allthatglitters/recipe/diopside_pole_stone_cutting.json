@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:diopside_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:diopside_pole"
+  }
+}

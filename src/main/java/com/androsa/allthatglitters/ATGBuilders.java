@@ -2,6 +2,7 @@ package com.androsa.allthatglitters;
 
 import androsa.gaiadimension.registry.registration.ModBlocks;
 import com.androsa.allthatglitters.data.BlockTagGenerator;
+import com.androsa.ornamental.builder.BlockSetBuilder;
 import com.androsa.ornamental.builder.OrnamentBuilder;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.Block;
@@ -45,8 +46,10 @@ public class ATGBuilders {
                 .hardnessAndResistance(5.0F, 10.0F)
                 .stairBaseBlock(baseblock)
                 .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
-                .blockSetType(name, false, SoundType.METAL, SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF, SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON)
-                .canOpen(false)
+                .blockSetType(new BlockSetBuilder(name)
+                        .soundType(SoundType.METAL)
+                        .ironSounds()
+                        .build())
                 .requiresTool()
                 .addBlockTags(new ArrayList<>(List.of(BlockTagGenerator.PICKAXE_TOOL, BlockTagGenerator.IRON_REQUIRED)));
     }

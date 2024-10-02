@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:goldstone_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:goldstone_beam"
+  }
+}

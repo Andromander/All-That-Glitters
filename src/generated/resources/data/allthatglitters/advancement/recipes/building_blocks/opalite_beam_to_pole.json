@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opalite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "allthatglitters:opalite_beam"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:opalite_beam_to_pole"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_opalite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:opalite_beam_to_pole"
+    ]
+  }
+}

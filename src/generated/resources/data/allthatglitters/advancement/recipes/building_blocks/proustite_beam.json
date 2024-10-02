@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_proustite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "allthatglitters:proustite_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:proustite_beam"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_proustite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:proustite_beam"
+    ]
+  }
+}

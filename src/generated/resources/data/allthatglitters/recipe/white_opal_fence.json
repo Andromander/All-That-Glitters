@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "gaiadimension:white_opal_block"
+    },
+    "/": {
+      "item": "gaiadimension:white_opal"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "allthatglitters:white_opal_fence"
+  }
+}

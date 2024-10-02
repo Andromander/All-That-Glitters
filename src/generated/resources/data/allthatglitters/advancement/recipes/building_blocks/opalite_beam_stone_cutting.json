@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opalite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gaiadimension:opalite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:opalite_beam_stone_cutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_opalite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:opalite_beam_stone_cutting"
+    ]
+  }
+}

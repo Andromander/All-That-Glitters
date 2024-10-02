@@ -5,7 +5,7 @@ import com.androsa.allthatglitters.ATGBlocks;
 import com.androsa.allthatglitters.AllThatGlittersMod;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class BlockStateGenerator extends OrnamentalBlockStateProvider {
 

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:aura_block"
+  },
+  "result": {
+    "count": 2,
+    "id": "allthatglitters:aura_slab"
+  }
+}

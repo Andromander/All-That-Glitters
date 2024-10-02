@@ -7,7 +7,7 @@ import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -273,24 +273,24 @@ public class ItemModelGenerator extends OrnamentalItemModelProvider {
 
     @Override
     public void blockItemFence(Supplier<? extends Block> block, String name) {
-        ResourceLocation loc = new ResourceLocation(GaiaDimensionMod.MODID, "block/" + name);
+        ResourceLocation loc = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
         blockItemFence(block, loc, loc, loc);
     }
 
     @Override
     public void blockItemPole(Supplier<? extends Block> block, String name, Optional<ResourceLocation> type) {
-        ResourceLocation tex = new ResourceLocation(GaiaDimensionMod.MODID, "block/" + name);
+        ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
         blockItemPole(block, tex, tex, tex, type);
     }
 
     @Override
     public void blockItemBeam(Supplier<? extends Block> block, String name) {
-        ResourceLocation tex = new ResourceLocation(GaiaDimensionMod.MODID, "block/" + name);
+        ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
         blockItemBeam(block, tex, tex, tex);
     }
 
     public void blockItemWall(Supplier<? extends Block> block, String name) {
-        ResourceLocation tex = new ResourceLocation(GaiaDimensionMod.MODID, "block/" + name);
+        ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
         blockItemWall(block, tex, tex, tex);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:green_opal_pole"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:green_opal_beam"
+  }
+}

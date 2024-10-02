@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:tektite_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "allthatglitters:tektite_beam"
+  }
+}
