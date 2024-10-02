@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sugilite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "allthatglitters:sugilite_pole",
+              "allthatglitters:sugilite_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:sugilite_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sugilite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:sugilite_support"
+    ]
+  }
+}

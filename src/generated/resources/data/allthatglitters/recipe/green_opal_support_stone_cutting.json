@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:green_opal_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:green_opal_support"
+  }
+}

@@ -30,6 +30,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.sugilite_beam, false))
                 .wall(add(ATGBlocks.sugilite_wall, false))
                 .saddledoor(add(ATGBlocks.sugilite_saddle_door, false))
+                .support(add(ATGBlocks.sugilite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.hematite_block.get(), ModItems.hematite.get(), true)
                 .stairs(add(ATGBlocks.hematite_stairs, false))
@@ -42,6 +43,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.hematite_beam, false))
                 .wall(add(ATGBlocks.hematite_wall, false))
                 .saddledoor(add(ATGBlocks.hematite_saddle_door, false))
+                .support(add(ATGBlocks.hematite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.cinnabar_block.get(), ModItems.cinnabar.get(), true)
                 .stairs(add(ATGBlocks.cinnabar_stairs, false))
@@ -54,6 +56,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.cinnabar_beam, false))
                 .wall(add(ATGBlocks.cinnabar_wall, false))
                 .saddledoor(add(ATGBlocks.cinnabar_saddle_door, false))
+                .support(add(ATGBlocks.cinnabar_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.labradorite_block.get(), ModItems.labradorite.get(), true)
                 .stairs(add(ATGBlocks.labradorite_stairs, false))
@@ -66,6 +69,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.labradorite_beam, false))
                 .wall(add(ATGBlocks.labradorite_wall, false))
                 .saddledoor(add(ATGBlocks.labradorite_saddle_door, false))
+                .support(add(ATGBlocks.labradorite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.moonstone_block.get(), ModItems.moonstone.get(), true)
                 .stairs(add(ATGBlocks.moonstone_stairs, false))
@@ -78,6 +82,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.moonstone_beam, false))
                 .wall(add(ATGBlocks.moonstone_wall, false))
                 .saddledoor(add(ATGBlocks.moonstone_saddle_door, false))
+                .support(add(ATGBlocks.moonstone_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.red_opal_block.get(), ModItems.red_opal.get(), true)
                 .stairs(add(ATGBlocks.red_opal_stairs, false))
@@ -90,6 +95,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.red_opal_beam, false))
                 .wall(add(ATGBlocks.red_opal_wall, false))
                 .saddledoor(add(ATGBlocks.red_opal_saddle_door, false))
+                .support(add(ATGBlocks.red_opal_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.blue_opal_block.get(), ModItems.blue_opal.get(), true)
                 .stairs(add(ATGBlocks.blue_opal_stairs, false))
@@ -102,6 +108,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.blue_opal_beam, false))
                 .wall(add(ATGBlocks.blue_opal_wall, false))
                 .saddledoor(add(ATGBlocks.blue_opal_saddle_door, false))
+                .support(add(ATGBlocks.blue_opal_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.green_opal_block.get(), ModItems.green_opal.get(), true)
                 .stairs(add(ATGBlocks.green_opal_stairs, false))
@@ -114,6 +121,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.green_opal_beam, false))
                 .wall(add(ATGBlocks.green_opal_wall, false))
                 .saddledoor(add(ATGBlocks.green_opal_saddle_door, false))
+                .support(add(ATGBlocks.green_opal_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.white_opal_block.get(), ModItems.white_opal.get(), true)
                 .stairs(add(ATGBlocks.white_opal_stairs, false))
@@ -126,6 +134,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.white_opal_beam, false))
                 .wall(add(ATGBlocks.white_opal_wall, false))
                 .saddledoor(add(ATGBlocks.white_opal_saddle_door, false))
+                .support(add(ATGBlocks.white_opal_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.pyrite_block.get(), ModItems.pyrite.get(), true)
                 .stairs(add(ATGBlocks.pyrite_stairs, false))
@@ -138,6 +147,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.pyrite_beam, false))
                 .wall(add(ATGBlocks.pyrite_wall, false))
                 .saddledoor(add(ATGBlocks.pyrite_saddle_door, false))
+                .support(add(ATGBlocks.pyrite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.tektite_block.get(), ModItems.tektite.get(), true)
                 .stairs(add(ATGBlocks.tektite_stairs, false))
@@ -150,6 +160,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.tektite_beam, false))
                 .wall(add(ATGBlocks.tektite_wall, false))
                 .saddledoor(add(ATGBlocks.tektite_saddle_door, false))
+                .support(add(ATGBlocks.tektite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.goldstone_block.get(), ModItems.goldstone.get(), true)
                 .stairs(add(ATGBlocks.goldstone_stairs, false))
@@ -162,6 +173,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.goldstone_beam, false))
                 .wall(add(ATGBlocks.goldstone_wall, false))
                 .saddledoor(add(ATGBlocks.goldstone_saddle_door, false))
+                .support(add(ATGBlocks.goldstone_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.aura_block.get(), ModItems.aura_cluster.get(), true)
                 .stairs(add(ATGBlocks.aura_stairs, false))
@@ -174,6 +186,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.aura_beam, false))
                 .wall(add(ATGBlocks.aura_wall, false))
                 .saddledoor(add(ATGBlocks.aura_saddle_door, false))
+                .support(add(ATGBlocks.aura_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.bismuth_block.get(), ModItems.bismuth_crystal.get(), true)
                 .stairs(add(ATGBlocks.bismuth_stairs, false))
@@ -186,6 +199,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.bismuth_beam, false))
                 .wall(add(ATGBlocks.bismuth_wall, false))
                 .saddledoor(add(ATGBlocks.bismuth_saddle_door, false))
+                .support(add(ATGBlocks.bismuth_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.opalite_block.get(), ModItems.opalite.get(), true)
                 .stairs(add(ATGBlocks.opalite_stairs, false))
@@ -198,6 +212,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.opalite_beam, false))
                 .wall(add(ATGBlocks.opalite_wall, false))
                 .saddledoor(add(ATGBlocks.opalite_saddle_door, false))
+                .support(add(ATGBlocks.opalite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.stibnite_block.get(), ModItems.stibnite.get(), true)
                 .stairs(add(ATGBlocks.stibnite_stairs, false))
@@ -222,6 +237,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.proustite_beam, false))
                 .wall(add(ATGBlocks.proustite_wall, false))
                 .saddledoor(add(ATGBlocks.proustite_saddle_door, false))
+                .support(add(ATGBlocks.proustite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.euclase_block.get(), ModItems.euclase.get(), true)
                 .stairs(add(ATGBlocks.euclase_stairs, false))
@@ -234,6 +250,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.euclase_beam, false))
                 .wall(add(ATGBlocks.euclase_wall, false))
                 .saddledoor(add(ATGBlocks.euclase_saddle_door, false))
+                .support(add(ATGBlocks.euclase_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.albite_block.get(), ModItems.albite.get(), true)
                 .stairs(add(ATGBlocks.albite_stairs, false))
@@ -246,6 +263,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.albite_beam, false))
                 .wall(add(ATGBlocks.albite_wall, false))
                 .saddledoor(add(ATGBlocks.albite_saddle_door, false))
+                .support(add(ATGBlocks.albite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.carnelian_block.get(), ModItems.carnelian.get(), true)
                 .stairs(add(ATGBlocks.carnelian_stairs, false))
@@ -258,6 +276,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.carnelian_beam, false))
                 .wall(add(ATGBlocks.carnelian_wall, false))
                 .saddledoor(add(ATGBlocks.carnelian_saddle_door, false))
+                .support(add(ATGBlocks.carnelian_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.benitoite_block.get(), ModItems.benitoite.get(), true)
                 .stairs(add(ATGBlocks.benitoite_stairs, false))
@@ -270,6 +289,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.benitoite_beam, false))
                 .wall(add(ATGBlocks.benitoite_wall, false))
                 .saddledoor(add(ATGBlocks.benitoite_saddle_door, false))
+                .support(add(ATGBlocks.benitoite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.diopside_block.get(), ModItems.diopside.get(), true)
                 .stairs(add(ATGBlocks.diopside_stairs, false))
@@ -282,6 +302,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.diopside_beam, false))
                 .wall(add(ATGBlocks.diopside_wall, false))
                 .saddledoor(add(ATGBlocks.diopside_saddle_door, false))
+                .support(add(ATGBlocks.diopside_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.goshenite_block.get(), ModItems.goshenite.get(), true)
                 .stairs(add(ATGBlocks.goshenite_stairs, false))
@@ -294,6 +315,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.goshenite_beam, false))
                 .wall(add(ATGBlocks.goshenite_wall, false))
                 .saddledoor(add(ATGBlocks.goshenite_saddle_door, false))
+                .support(add(ATGBlocks.goshenite_support, false))
                 .build());
         autoRecipe(consumer, new AutoRecipeManager.Builder(ModBlocks.celestine_block.get(), ModItems.celestine.get(), true)
                 .stairs(add(ATGBlocks.celestine_stairs, false))
@@ -306,6 +328,7 @@ public class RecipeGenerator extends OrnamentalRecipeProvider {
                 .beam(add(ATGBlocks.celestine_beam, false))
                 .wall(add(ATGBlocks.celestine_wall, false))
                 .saddledoor(add(ATGBlocks.celestine_saddle_door, false))
+                .support(add(ATGBlocks.celestine_support, false))
                 .build());
     }
 }

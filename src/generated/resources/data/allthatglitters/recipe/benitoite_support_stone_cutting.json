@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gaiadimension:benitoite_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "allthatglitters:benitoite_support"
+  }
+}

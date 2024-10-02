@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_goshenite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "allthatglitters:goshenite_pole",
+              "allthatglitters:goshenite_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "allthatglitters:goshenite_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_goshenite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "allthatglitters:goshenite_support"
+    ]
+  }
+}

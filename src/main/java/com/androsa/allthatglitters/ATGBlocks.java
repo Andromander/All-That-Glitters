@@ -263,4 +263,29 @@ public class ATGBlocks {
     public static final Supplier<OrnamentSaddleDoor> diopside_saddle_door = HELPER.saddledoor(ATGBuilders.DIOPSIDE);
     public static final Supplier<OrnamentSaddleDoor> goshenite_saddle_door = HELPER.saddledoor(ATGBuilders.GOSHENITE);
     public static final Supplier<OrnamentSaddleDoor> celestine_saddle_door = HELPER.saddledoor(ATGBuilders.CELESTINE);
+
+    public static final Supplier<OrnamentSupport> sugilite_support = HELPER.support(ATGBuilders.SUGILITE);
+    public static final Supplier<OrnamentSupport> hematite_support = HELPER.support(ATGBuilders.HEMATITE);
+    public static final Supplier<OrnamentSupport> cinnabar_support = HELPER.support(ATGBuilders.CINNABAR);
+    public static final Supplier<OrnamentSupport> labradorite_support = HELPER.support(ATGBuilders.LABRADORITE);
+    public static final Supplier<OrnamentSupport> moonstone_support = HELPER.support(ATGBuilders.MOONSTONE);
+    public static final Supplier<OrnamentSupport> red_opal_support = HELPER.support(ATGBuilders.RED_OPAL);
+    public static final Supplier<OrnamentSupport> blue_opal_support = HELPER.support(ATGBuilders.BLUE_OPAL);
+    public static final Supplier<OrnamentSupport> green_opal_support = HELPER.support(ATGBuilders.GREEN_OPAL);
+    public static final Supplier<OrnamentSupport> white_opal_support = HELPER.support(ATGBuilders.WHITE_OPAL);
+    public static final Supplier<OrnamentSupport> pyrite_support = HELPER.support(ATGBuilders.PYRITE);
+    public static final Supplier<OrnamentSupport> tektite_support = HELPER.support(ATGBuilders.TEKTITE);
+    public static final Supplier<OrnamentSupport> goldstone_support = HELPER.support(ATGBuilders.GOLDSTONE);
+    public static final Supplier<OrnamentSupport> aura_support = HELPER.support(ATGBuilders.AURA);
+    public static final Supplier<OrnamentSupport> bismuth_support = HELPER.support(ATGBuilders.BISMUTH);
+    public static final Supplier<OrnamentSupport> opalite_support = HELPER.support(ATGBuilders.OPALITE);
+    public static final Supplier<OrnamentSupport> stibnite_support = HELPER.support(ATGBuilders.STIBNITE);
+    public static final Supplier<OrnamentSupport> proustite_support = HELPER.support(ATGBuilders.PROUSTITE);
+    public static final Supplier<OrnamentSupport> euclase_support = HELPER.support(ATGBuilders.EUCLASE);
+    public static final Supplier<OrnamentSupport> albite_support = HELPER.support(ATGBuilders.ALBITE);
+    public static final Supplier<OrnamentSupport> carnelian_support = HELPER.support(ATGBuilders.CARNELIAN);
+    public static final Supplier<OrnamentSupport> benitoite_support = HELPER.support(ATGBuilders.BENITOITE);
+    public static final Supplier<OrnamentSupport> diopside_support = HELPER.support(ATGBuilders.DIOPSIDE);
+    public static final Supplier<OrnamentSupport> goshenite_support = HELPER.support(ATGBuilders.GOSHENITE);
+    public static final Supplier<OrnamentSupport> celestine_support = HELPER.support(ATGBuilders.CELESTINE);
 }

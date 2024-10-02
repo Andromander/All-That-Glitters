@@ -286,6 +286,31 @@ public class LootGenerator extends LootTableProvider {
             dropSelf(ATGBlocks.diopside_saddle_door);
             dropSelf(ATGBlocks.goshenite_saddle_door);
             dropSelf(ATGBlocks.celestine_saddle_door);
+
+            dropSelf(ATGBlocks.sugilite_support);
+            dropSelf(ATGBlocks.hematite_support);
+            dropSelf(ATGBlocks.cinnabar_support);
+            dropSelf(ATGBlocks.labradorite_support);
+            dropSelf(ATGBlocks.moonstone_support);
+            dropSelf(ATGBlocks.red_opal_support);
+            dropSelf(ATGBlocks.blue_opal_support);
+            dropSelf(ATGBlocks.green_opal_support);
+            dropSelf(ATGBlocks.white_opal_support);
+            dropSelf(ATGBlocks.pyrite_support);
+            dropSelf(ATGBlocks.tektite_support);
+            dropSelf(ATGBlocks.goldstone_support);
+            dropSelf(ATGBlocks.aura_support);
+            dropSelf(ATGBlocks.bismuth_support);
+            dropSelf(ATGBlocks.opalite_support);
+            dropSelf(ATGBlocks.stibnite_support);
+            dropSelf(ATGBlocks.proustite_support);
+            dropSelf(ATGBlocks.euclase_support);
+            dropSelf(ATGBlocks.albite_support);
+            dropSelf(ATGBlocks.carnelian_support);
+            dropSelf(ATGBlocks.benitoite_support);
+            dropSelf(ATGBlocks.diopside_support);
+            dropSelf(ATGBlocks.goshenite_support);
+            dropSelf(ATGBlocks.celestine_support);
         }
 
         @Override

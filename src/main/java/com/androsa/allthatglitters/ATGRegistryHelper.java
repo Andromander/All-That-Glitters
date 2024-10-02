@@ -114,6 +114,6 @@ public class ATGRegistryHelper extends MasterRegistryHelper {
 
     @Override
     protected TagHelper supportTags() {
-        return null;
+        return new TagHelper(this.array(BlockTagGenerator.SUPPORTS), this.array(ItemTagGenerator.SUPPORTS));
     }
 }

@@ -26,6 +26,7 @@ public class ItemTagGenerator extends OrnamentalItemTagProvider {
     public static final List<Supplier<? extends Block>> SADDLE_DOORS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> SLABS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> STAIRS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> SUPPORTS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> TRAPDOORS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> WALLS = Lists.newArrayList();
 
@@ -45,6 +46,7 @@ public class ItemTagGenerator extends OrnamentalItemTagProvider {
         addToTag(ModTags.Items.SADDLE_DOORS, SADDLE_DOORS);
         addToTag(ItemTags.SLABS, SLABS);
         addToTag(ItemTags.STAIRS, STAIRS);
+        addToTag(ModTags.Items.SUPPORTS, SUPPORTS);
         addToTag(ItemTags.TRAPDOORS, TRAPDOORS);
         addToTag(ItemTags.WALLS, WALLS);
     }

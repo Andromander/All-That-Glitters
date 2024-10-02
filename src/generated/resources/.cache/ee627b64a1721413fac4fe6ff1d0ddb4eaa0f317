@@ -1,4 +1,4 @@
-// 1.21	2024-10-02T16:41:57.9842292	Tags for minecraft:item mod id allthatglitters
+// 1.21	2024-10-02T17:28:51.5002703	Tags for minecraft:item mod id allthatglitters
 248982b48db4c0b72c16cd4f0fbaa46285f1bac9 data/c/tags/item/fences.json
 dfdfe5ea21d26818588e949035e9646bf1b3f0ae data/c/tags/item/fence_gates.json
 1bcbf37e339f308f630bf5b2be36a7848453ff11 data/minecraft/tags/item/doors.json
@@ -11,3 +11,4 @@ f8029e1dc402ddc20a8c97cd37f4422caf6a1e27 data/minecraft/tags/item/walls.json
 01e249cdc387dff64f5bf9ff9f25312bb34537d6 data/ornamental/tags/item/beams.json
 6ce6fd2b62c52777e3bd3aec1fa2d120c2f72e3c data/ornamental/tags/item/poles.json
 86def83e4112c9aa2106405be8a66be69412ee45 data/ornamental/tags/item/saddle_doors.json
+69d2bc5dc1891834e6218128764cf143e66a2a48 data/ornamental/tags/item/supports.json

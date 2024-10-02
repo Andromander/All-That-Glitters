@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "allthatglitters:celestine_pole"
+    },
+    {
+      "item": "allthatglitters:celestine_beam"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "allthatglitters:celestine_support"
+  }
+}

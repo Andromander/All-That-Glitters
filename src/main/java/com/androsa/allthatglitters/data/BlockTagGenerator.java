@@ -26,6 +26,7 @@ public class BlockTagGenerator extends OrnamentalBlockTagProvider {
     public static final List<Supplier<? extends Block>> SADDLE_DOORS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> SLABS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> STAIRS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> SUPPORTS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> TRAPDOORS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> WALLS = Lists.newArrayList();
 
@@ -49,6 +50,7 @@ public class BlockTagGenerator extends OrnamentalBlockTagProvider {
         addToTag(ModTags.Blocks.SADDLE_DOORS, SADDLE_DOORS);
         addToTag(BlockTags.SLABS, SLABS);
         addToTag(BlockTags.STAIRS, STAIRS);
+        addToTag(ModTags.Blocks.SUPPORTS, SUPPORTS);
         addToTag(BlockTags.TRAPDOORS, TRAPDOORS);
         addToTag(BlockTags.WALLS, WALLS);
 

@@ -269,6 +269,31 @@ public class ItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoor(ATGBlocks.diopside_saddle_door, "diopside");
         blockItemSaddleDoor(ATGBlocks.goshenite_saddle_door, "goshenite");
         blockItemSaddleDoor(ATGBlocks.celestine_saddle_door, "celestine");
+
+        blockItemSupport(ATGBlocks.sugilite_support, "sugilite_block");
+        blockItemSupport(ATGBlocks.hematite_support, "hematite_block");
+        blockItemSupport(ATGBlocks.cinnabar_support, "cinnabar_block");
+        blockItemSupport(ATGBlocks.labradorite_support, "labradorite_block");
+        blockItemSupport(ATGBlocks.moonstone_support, "moonstone_block");
+        blockItemSupport(ATGBlocks.red_opal_support, "red_opal_block");
+        blockItemSupport(ATGBlocks.blue_opal_support, "blue_opal_block");
+        blockItemSupport(ATGBlocks.green_opal_support, "green_opal_block");
+        blockItemSupport(ATGBlocks.white_opal_support, "white_opal_block");
+        blockItemSupport(ATGBlocks.pyrite_support, "pyrite_block");
+        blockItemSupport(ATGBlocks.tektite_support, "tektite_block");
+        blockItemSupport(ATGBlocks.goldstone_support, "goldstone_block");
+        blockItemSupport(ATGBlocks.aura_support, "aura_block");
+        blockItemSupport(ATGBlocks.bismuth_support, "bismuth_block");
+        blockItemSupport(ATGBlocks.opalite_support, "opalite_block");
+        blockItemSupport(ATGBlocks.stibnite_support, "stibnite_block");
+        blockItemSupport(ATGBlocks.proustite_support, "proustite_block");
+        blockItemSupport(ATGBlocks.euclase_support, "euclase_block");
+        blockItemSupport(ATGBlocks.albite_support, "albite_block");
+        blockItemSupport(ATGBlocks.carnelian_support, "carnelian_block");
+        blockItemSupport(ATGBlocks.benitoite_support, "benitoite_block");
+        blockItemSupport(ATGBlocks.diopside_support, "diopside_block");
+        blockItemSupport(ATGBlocks.goshenite_support, "goshenite_block");
+        blockItemSupport(ATGBlocks.celestine_support, "celestine_block");
     }
 
     @Override
@@ -289,8 +314,15 @@ public class ItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(block, tex, tex, tex);
     }
 
+    @Override
     public void blockItemWall(Supplier<? extends Block> block, String name) {
         ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
         blockItemWall(block, tex, tex, tex);
+    }
+
+    @Override
+    public void blockItemSupport(Supplier<? extends Block> block, String name) {
+        ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(GaiaDimensionMod.MODID, "block/" + name);
+        blockItemSupport(block, tex, tex, tex);
     }
 }

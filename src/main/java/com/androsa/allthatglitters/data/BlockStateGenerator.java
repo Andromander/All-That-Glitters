@@ -264,5 +264,30 @@ public class BlockStateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorBasic(ATGBlocks.diopside_saddle_door, "diopside");
         saddleDoorBasic(ATGBlocks.goshenite_saddle_door, "goshenite");
         saddleDoorBasic(ATGBlocks.celestine_saddle_door, "celestine");
+
+        supportBasic(ATGBlocks.sugilite_support, "sugilite_block");
+        supportBasic(ATGBlocks.hematite_support, "hematite_block");
+        supportBasic(ATGBlocks.cinnabar_support, "cinnabar_block");
+        supportBasic(ATGBlocks.labradorite_support, "labradorite_block");
+        supportBasic(ATGBlocks.moonstone_support, "moonstone_block");
+        supportBasic(ATGBlocks.red_opal_support, "red_opal_block");
+        supportBasic(ATGBlocks.blue_opal_support, "blue_opal_block");
+        supportBasic(ATGBlocks.green_opal_support, "green_opal_block");
+        supportBasic(ATGBlocks.white_opal_support, "white_opal_block");
+        supportBasic(ATGBlocks.pyrite_support, "pyrite_block");
+        supportBasic(ATGBlocks.tektite_support, "tektite_block");
+        supportBasic(ATGBlocks.goldstone_support, "goldstone_block");
+        supportBasic(ATGBlocks.aura_support, "aura_block");
+        supportBasic(ATGBlocks.bismuth_support, "bismuth_block");
+        supportBasic(ATGBlocks.opalite_support, "opalite_block");
+        supportBasic(ATGBlocks.stibnite_support, "stibnite_block");
+        supportBasic(ATGBlocks.proustite_support, "proustite_block");
+        supportBasic(ATGBlocks.euclase_support, "euclase_block");
+        supportBasic(ATGBlocks.albite_support, "albite_block");
+        supportBasic(ATGBlocks.carnelian_support, "carnelian_block");
+        supportBasic(ATGBlocks.benitoite_support, "benitoite_block");
+        supportBasic(ATGBlocks.diopside_support, "diopside_block");
+        supportBasic(ATGBlocks.goshenite_support, "goshenite_block");
+        supportBasic(ATGBlocks.celestine_support, "celestine_block");
     }
 }

@@ -266,6 +266,31 @@ public class LanguageGenerator extends LanguageProvider {
         add(ATGBlocks.diopside_saddle_door, "Diopside Saddle Door");
         add(ATGBlocks.goshenite_saddle_door, "Goshenite Saddle Door");
         add(ATGBlocks.celestine_saddle_door, "Celestine Saddle Door");
+
+        add(ATGBlocks.sugilite_support, "Sugilite Support");
+        add(ATGBlocks.hematite_support, "Hematite Support");
+        add(ATGBlocks.cinnabar_support, "Cinnabar Support");
+        add(ATGBlocks.labradorite_support, "Labradorite Support");
+        add(ATGBlocks.moonstone_support, "Moonstone Support");
+        add(ATGBlocks.red_opal_support, "Red Opal Support");
+        add(ATGBlocks.blue_opal_support, "Blue Opal Support");
+        add(ATGBlocks.green_opal_support, "Green Opal Support");
+        add(ATGBlocks.white_opal_support, "White Opal Support");
+        add(ATGBlocks.pyrite_support, "Pyrite Support");
+        add(ATGBlocks.tektite_support, "Tektite Support");
+        add(ATGBlocks.goldstone_support, "Goldstone Support");
+        add(ATGBlocks.aura_support, "Aura Support");
+        add(ATGBlocks.bismuth_support, "Bismuth Support");
+        add(ATGBlocks.opalite_support, "Opalite Support");
+        add(ATGBlocks.stibnite_support, "Stibnite Support");
+        add(ATGBlocks.proustite_support, "Proustite Support");
+        add(ATGBlocks.euclase_support, "Euclase Support");
+        add(ATGBlocks.albite_support, "Albite Support");
+        add(ATGBlocks.carnelian_support, "Carnelian Support");
+        add(ATGBlocks.benitoite_support, "Benitoite Support");
+        add(ATGBlocks.diopside_support, "Diopside Support");
+        add(ATGBlocks.goshenite_support, "Goshenite Support");
+        add(ATGBlocks.celestine_support, "Celestine Support");
     }
 
     private void add(Supplier<? extends Block> block, String name) {
